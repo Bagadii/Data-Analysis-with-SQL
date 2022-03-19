@@ -4,13 +4,13 @@ SELECT
 ----this gets the year
   lastart.year,
 ----this gets the customer age
-  labstart.cuctomer_age,
+  labstart.customer_age,
 ---this case statement analyse is condition is met
   CASE WHEN lastart.year >2015
-     THEN labstatrt.customer_age
+     THEN labstart.customer_age
      ELSE NULL
    END AS age_analyze
-FROM lastar
+FROM labstart
 
 ----Counts based on condition
 SELECT
@@ -22,5 +22,5 @@ lastart.year,
       THEN count(labstatrt.customer_age)
       ELSE NULL
   END AS number_0f_customer
-FROM lastart
+FROM labstart
   Group by labstart-year
